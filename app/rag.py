@@ -13,7 +13,6 @@ Arquitectura:
    Claude como contexto para que responda citando el artículo exacto.
 """
 import logging
-import re
 import time
 
 import httpx
@@ -65,8 +64,8 @@ def _partir_en_fragmentos(texto: str) -> list[dict]:
     bloques = [b.strip() for b in texto.split("===") if b.strip()]
     fragmentos = []
     for b in bloques:
-        m = re.match(r"ARTÍCULO\s+(\d+)", b)
-        titulo = f"Artículo {m.group(1)}" if m else "Introducción / Nota"
+        primera_linea = b.split("\n", 1)[0].strip()
+        titulo = primera_linea if primera_linea.startswith("ARTÍCULO") else "Introducción / Nota"
         fragmentos.append({"titulo": titulo, "texto": b})
     return fragmentos
 
@@ -118,17 +117,21 @@ class IndiceNormativa:
 indice = IndiceNormativa()
 
 
-PROMPT_SISTEMA = """Eres un asistente de cumplimiento ambiental para ingenieros de \
-campo en el sector de hidrocarburos en Colombia. Respondes preguntas basándote \
-ÚNICAMENTE en los fragmentos de normativa que se te entregan a continuación.
+PROMPT_SISTEMA = """Eres un asistente técnico de emisiones fugitivas para ingenieros \
+de campo que usan cámaras OGI (Optical Gas Imaging) en instalaciones de petróleo y \
+gas. Respondes preguntas basándote ÚNICAMENTE en los fragmentos de normativa que se \
+te entregan a continuación (40 CFR Subpart OOOOb, EPA — usada como referencia \
+técnica de buenas prácticas internacionales).
 
 Reglas:
 - Si la normativa entregada no contiene la respuesta, dilo claramente: "La \
-normativa que tengo disponible no cubre esto" — nunca inventes valores ni artículos.
-- Cita siempre el número de artículo exacto de donde sale tu respuesta.
+normativa que tengo disponible no cubre esto" — nunca inventes plazos, umbrales \
+ni artículos.
+- Cita siempre el artículo/sección exacta (ej. §60.5397b(h)) de donde sale tu respuesta.
 - Sé directo y práctico: el usuario te está escribiendo desde el campo por WhatsApp.
-- Aclara siempre que esto no sustituye asesoría legal/ambiental profesional ni \
-los procedimientos internos oficiales de la empresa.
+- Aclara siempre que esta es normativa de EE.UU. usada como referencia técnica, no \
+la normativa vigente en Colombia, y que no sustituye asesoría legal/ambiental \
+profesional ni los procedimientos internos oficiales de la empresa.
 - Responde en español, en máximo 6-8 líneas.
 """
 
