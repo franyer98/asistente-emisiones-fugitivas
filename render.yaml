@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: asistente-cumplimiento-ambiental
+    name: asistente-emisiones-fugitivas
     runtime: docker
     plan: free
     dockerfilePath: ./Dockerfile
