@@ -1,0 +1,106 @@
+FUENTE: 40 CFR Part 60, Subpart OOOOb — "Standards of Performance for Crude Oil
+and Natural Gas Facilities for Which Construction, Modification or Reconstruction
+Commenced After December 6, 2022" (EPA, Estados Unidos).
+Sección §60.5397b — Estándares de monitoreo y reparación de componentes con
+emisiones fugitivas. Regla final publicada en el Registro Federal el 8 de marzo
+de 2024 (89 FR 17064). Vigente.
+
+NOTA: Esta es la normativa pública más detallada y técnica que existe sobre
+detección y reparación de emisiones fugitivas mediante cámara OGI (Optical Gas
+Imaging) — el mismo método de trabajo usado en campo con cámaras FLIR. Colombia
+no cuenta con una regulación pública tan específica sobre frecuencias OGI y
+plazos de reparación; esta norma estadounidense se usa aquí como referencia
+técnica internacional de buenas prácticas, no como ley aplicable en Colombia.
+
+===
+
+ARTÍCULO §60.5397b(g) — FRECUENCIA DE MONITOREO SEGÚN TIPO DE INSTALACIÓN.
+
+Well sites (pozos) con equipo mayor de producción y Centralized Production
+Facilities (CPF):
+- Monitoreo AVO (Audio, Visual, Olfativo): bimestral (cada dos meses).
+- Monitoreo OGI: trimestral (cada tres meses).
+- Como alternativa al OGI, se permite Método 21 (medición con analizador
+  portátil), también trimestral, considerando como fuga cualquier lectura
+  ≥ 500 ppm.
+
+Compressor stations (estaciones de compresión):
+- Monitoreo AVO: mensual.
+- Monitoreo OGI: trimestral (o Método 21 trimestral con el mismo umbral de
+  500 ppm).
+
+Plantas de procesamiento de gas natural (onshore):
+- Inspecciones OGI para "no identifiable emissions" en cubiertas y sistemas de
+  venteo cerrado: inicial y bimestral.
+- Alternativa: Método 21 trimestral.
+
+El monitoreo de emisiones fugitivas debe continuar en todos los well sites hasta
+que el sitio sea formalmente cerrado (incluyendo taponamiento de pozos y envío
+del reporte de cierre).
+
+===
+
+ARTÍCULO §60.5397b(h) — PLAZOS DE REPARACIÓN.
+
+(h)(1) Primer intento de reparación:
+(i) Si la fuga fue detectada por método AVO: el primer intento de reparación
+debe realizarse a más tardar 15 días calendario después de la detección.
+(ii) Si la fuga fue detectada usando OGI o Método 21: el primer intento de
+reparación debe realizarse a más tardar 30 días calendario después de la
+detección.
+
+(h)(2) Reparación final:
+- Para fugas detectadas por AVO: la reparación final debe completarse a más
+  tardar 15 días calendario después del primer intento.
+- Para fugas detectadas por OGI o Método 21: la reparación final debe
+  completarse a más tardar 30 días calendario después del primer intento.
+
+Verificación posterior a la reparación: se debe realizar una re-inspección
+(resurvey) dentro de los 15 días siguientes a completar la reparación, para
+confirmar que la fuga fue efectivamente eliminada.
+
+===
+
+ARTÍCULO §60.5397b(c)(7) — ESPECIFICACIONES DEL EQUIPO OGI.
+
+El equipo de cámara OGI utilizado debe cumplir, entre otros, los siguientes
+requisitos técnicos:
+(A) Debe ser capaz de generar imágenes de gases en el rango espectral del
+compuesto de mayor concentración presente en la emisión fugitiva potencial.
+(B) Debe ser capaz de detectar una mezcla de gas compuesta 50% metano y 50%
+propano a una concentración de 10.000 ppm, con un caudal de fuga ≤ 60 g/hr
+desde un orificio de un cuarto de pulgada de diámetro.
+
+El operador debe documentar en su plan de monitoreo:
+- El procedimiento para determinar la distancia máxima de observación del
+  equipo respecto al componente inspeccionado.
+- El procedimiento para determinar la velocidad máxima de viento bajo la cual
+  se puede realizar el monitoreo, y cómo se garantiza que la inspección solo
+  ocurra por debajo de ese umbral.
+
+===
+
+ARTÍCULO §60.5397b — EVENTOS DE "SUPER-EMISOR".
+
+Se define un evento de "super-emisor" (super-emitter event) como cualquier
+emisión ubicada en o cerca de una instalación de petróleo y gas (pozo,
+instalación de producción centralizada, planta de procesamiento, estación de
+compresión) detectada por métodos de sensoramiento remoto (ej. satélite), con
+una tasa de emisión cuantificada de metano igual o mayor a 100 kg/hora.
+
+Ante la notificación de un posible super-emisor, el operador debe, entre otras
+acciones: revisar los resultados de cualquier inspección OGI o de tamizaje
+periódico realizada entre la fecha de detección inicial y la fecha de recibo
+de la notificación, e inspeccionar la totalidad de la instalación con OGI,
+Método 21, u otro método de prueba alternativo aprobado, para determinar si el
+evento de super-emisor efectivamente está presente.
+
+===
+
+NOTA DEL ASISTENTE: Este asistente responde con base en la normativa federal de
+Estados Unidos (40 CFR Part 60, Subpart OOOOb), usada como referencia técnica
+internacional de buenas prácticas en detección y reparación de emisiones
+fugitivas mediante OGI. No es la normativa vigente en Colombia, no sustituye
+asesoría legal o ambiental profesional, y tampoco reemplaza los procedimientos
+internos oficiales de tu empresa (ej. GOP-F-006 u otros documentos internos de
+Ecopetrol), que no están incluidos en esta base de conocimiento pública.
