@@ -23,7 +23,7 @@ def construir_indice():
     del servidor (Render necesita que el puerto responda rápido)."""
     def _construir():
         try:
-            indice.construir("data/normativa/resolucion_0631_2015.txt")
+            indice.construir("data/normativa/emisiones_fugitivas_epa_oooob.txt")
         except Exception as e:
             logger.error(f"No se pudo construir el índice RAG al arrancar: {e}")
 
